@@ -1,11 +1,6 @@
 ---
 version: 2
 updates:
-- package-ecosystem: pip
-  directory: /
-  schedule:
-    interval: daily
-
 - package-ecosystem: docker
   directory: /
   schedule:
@@ -16,15 +11,7 @@ updates:
   schedule:
     interval: daily
 
-- package-ecosystem: npm
-  directory: /frontend/
-  ignore:
-  - dependency-name: '*'
-    update-types: [version-update:semver-major]
-  schedule:
-    interval: daily
-
-- package-ecosystem: gitsubmodule
+- package-ecosystem: composer
   directory: /
   schedule:
     interval: daily
