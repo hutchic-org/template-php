@@ -1,5 +1,5 @@
 # Use an official PHP image with Apache
-FROM php:8.4-apache
+FROM php:8.4.5-apache
 
 # Arguments to be passed at build time
 ARG UID=1000
